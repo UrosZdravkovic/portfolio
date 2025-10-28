@@ -1,8 +1,10 @@
+import heroImage from '../assets/heroImage.jpg'
+
 export default function Hero() {
     return (
         <section className="min-h-screen flex items-center justify-center px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 items-center">
                     {/* Text Content */}
                     <div className="space-y-8">
                         <div className="space-y-4">
@@ -49,28 +51,15 @@ export default function Hero() {
                     </div>
                     
                     {/* Image/Avatar */}
-                    <div className="flex justify-center lg:justify-end">
-                        <div className="relative">
-                            <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-2xl bg-white/3 border border-white/8 flex items-center justify-center">
-                                {/* Placeholder for your photo */}
-                                <div className="text-6xl">👨‍💻</div>
-                                {/* Replace with your actual image:
+                    <div className="flex justify-center lg:justify-center">
+                            <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-white/3 border border-white/8 flex items-center justify-center">
                                 <img 
-                                    src="/path-to-your-photo.jpg" 
+                                    src={heroImage} 
                                     alt="Uroš Zdravković" 
-                                    className="w-full h-full object-cover rounded-2xl"
+                                    className="w-full h-full object-cover rounded-full"
                                 />
-                                */}
-                            </div>
 
-                            {/* Subtle decorative dots (non-gradient) */}
-                            <div className="absolute -top-3 -right-3 w-16 h-16 bg-white/4 rounded-full border border-white/6 flex items-center justify-center">
-                                <span className="text-xl">⚡</span>
                             </div>
-                            <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-white/4 rounded-full border border-white/6 flex items-center justify-center">
-                                <span className="text-lg">🚀</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
