@@ -19,15 +19,6 @@ export default function Projects() {
             liveUrl: "#",
             githubUrl: "#"
         },
-        {
-            id: 3,
-            title: "Weather Widget",
-            description: "Compact weather widget that consumes a public API and displays forecasts with clean, minimal UI.",
-            image: "🌤️",
-            technologies: ["React", "Fetch API"],
-            liveUrl: "#",
-            githubUrl: "#"
-        }
     ]
 
     return (
@@ -41,12 +32,12 @@ export default function Projects() {
                         A small selection of personal projects I've built while learning and experimenting.
                     </p>
                 </div>
-                
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div className="grid w-10/12 mx-auto md:grid-cols-2 gap-8 place-items-center">
                     {projects.map((project) => (
                         <div 
                             key={project.id}
-                            className="group bg-white/3 border border-white/7 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg"
+                            className="group bg-white/3 w-96 text-center border border-white/7 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-lg"
                         >
                             {/* Project Image/Icon */}
                             <div className="h-48 bg-white/4 flex items-center justify-center text-6xl">
@@ -110,9 +101,9 @@ export default function Projects() {
                 
                 {/* Optional View All Projects Button */}
                 <div className="text-center mt-12">
-                    <a href="#" className="inline-block border border-white/10 text-white px-6 py-2 rounded-lg hover:bg-white/6 transition-colors duration-200 text-sm">
-                        View More
-                    </a>
+                    <span className="text-gray-400 text-sm italic bg-white/5 px-4 py-2 rounded-full border border-white/10">
+                        More to come...
+                    </span>
                 </div>
             </div>
         </section>
