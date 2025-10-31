@@ -6,7 +6,7 @@ export default function MainNavigation() {
         }
     };
 
-    const navigation = ['Home', 'About', 'Projects', 'Contact'];
+    const navigation = ['Home', 'About', 'Contact'];
 
     return (
         <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">

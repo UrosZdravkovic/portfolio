@@ -1,7 +1,6 @@
 import MainNavigation from "./layout/MainNavigation"
 import Hero from "./components/Hero"
-import About from "./components/About"
-import Projects from "./components/Projects"
+import AboutProjects from "./components/AboutProjects"
 import Contact from "./components/Contact"
 
 function App() {
@@ -15,11 +14,7 @@ function App() {
         </section>
         
         <section id="about">
-          <About />
-        </section>
-        
-        <section id="projects">
-          <Projects />
+          <AboutProjects />
         </section>
         
         <section id="contact">
