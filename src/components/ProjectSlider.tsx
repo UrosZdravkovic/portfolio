@@ -2,16 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Autoplay } from 'swiper/modules'
 import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { useRef } from 'react'
-
-interface Project {
-    id: number
-    title: string
-    description: string
-    image: string
-    technologies: string[]
-    liveUrl: string
-    githubUrl: string
-}
+import type { Project } from '../data/projects'
 
 interface ProjectSliderProps {
     projects: Project[]
